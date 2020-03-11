@@ -1,0 +1,119 @@
+.hero {
+  z-index: 1;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  padding-top: 270px;
+  padding-bottom: 30px;
+}
+
+.hero__main-title {
+  font-size: 35px;
+  font-family: 'Open Sans';
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  line-height: 1.694;
+}
+
+.hero__title {
+  display: block;
+  max-width: 280px;
+  font-size: 16px;
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  line-height: 1.375;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+}
+
+.hero__accent {
+  color: #e9ac38;
+}
+
+.hero__link-next {
+  display: block;
+  height: 15px;
+  width: 15px;
+  font-size: 35px;
+  color: #fff;
+  transform: rotateZ(270deg);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 399px) {
+  .hero {
+    background-image: url('../images/hero@320.jpg');
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .hero {
+    background-image: url('../images/hero@586.jpg');
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .hero {
+    padding-top: 300px;
+  }
+
+  .hero__main-title {
+    font-size: 45px;
+  }
+
+  .hero__title {
+    font-size: 27px;
+    max-width: 450px;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .hero {
+    background-image: url('../images/hero@900.jpg');
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    text-align: left;
+  }
+
+  .hero__inner {
+    max-width: 1340px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .hero__title {
+    position: relative;
+    margin-right: 0;
+    margin-left: 0;
+
+    &::before {
+      position: absolute;
+      display: block;
+      content: '';
+      width: 2px;
+      height: 65px;
+      background-color: #fcae26;
+      left: 22px;
+      top: 14px;
+    }
+  }
+}
